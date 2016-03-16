@@ -7,18 +7,12 @@ Uses [livereactload](https://github.com/milankinen/livereactload)'s [babel react
 Also exposes a boilerplate piece of babel config via `react-livejs/config`, that can later be used as
 
 ```javascript
-const reactLiveJS = require('react-livejs/config');
+const liveJs = require('react-livejs/config');
 
 // ...
 babel: {
   presets: ['es2015', 'react'],
-  env: {
-    development: {
-      plugins: [
-        reactLiveJS
-      ]
-    }
-  }
+  env: {development: {plugins: [liveJs]}}
 }
 ```
 
